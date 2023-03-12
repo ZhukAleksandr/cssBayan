@@ -50,3 +50,17 @@ input[type="radio"]{
     overflow: hidden;
     transition: max-height 0.5s, padding 0.5s;    
 }
+.accordion input[type="radio"]:checked + label + .content{    
+    max-height: 40rem;
+    padding: 1rem 1rem 1rem 1rem;
+    transition: 0.7s all;           
+}
+
+.accordion input[type="radio"]:checked + label::after{
+    content: "-";
+    transform: translateX(-50%);   
+    font-weight: 600;              
+}
+.accordion li:active:hover{
+    opacity: 0.65; 
+}
